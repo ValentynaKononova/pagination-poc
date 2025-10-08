@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pagination</title>
+  <link rel="stylesheet" href="style.css">
+  <script type="module" src="script.js"></script>
+</head>
+
+<body>
+  <ul class="cards">
+    <script>
+      let html = "";
+      for (let i = 0; i <= 300; i++) html += `<li>${i}</li>`;
+      document.write(html);
+      document.currentScript.remove();
+    </script>
+  </ul>
+  <div class="page-controls">
+    <button data-index="0">first</button>
+    <ul class="pagination">
+    </ul>
+    <button data-index="999">last</button>
+  </div>
+</body>
+
+</html>
