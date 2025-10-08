@@ -1,5 +1,5 @@
 const cards = document.querySelectorAll(".cards>li");
-const container = document.querySelector(".pagination");
+const pageList = document.querySelector(".pagination");
 const cardsPerPage = 14;
 const pageButtonsLimit = 5;
 let currentPage;
